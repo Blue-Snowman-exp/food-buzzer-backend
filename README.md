@@ -11,6 +11,7 @@ Spring Boot backend for FoodBuzzer app. Uses MySQL, JPA, and REST APIs for auth.
 
 1. Create a MySQL database:
    ```sql
+   
    CREATE DATABASE foodbuzzerdb;
    ```
 
