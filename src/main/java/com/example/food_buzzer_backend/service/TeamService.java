@@ -27,7 +27,10 @@ public class TeamService {
             response.setMessage(AppConstants.ERROR_USER_NOT_OWNER);
             return response;
         }
-
+        if (owner.getRestaurant() == null) {
+            response.setMessage("Owner has no restaurant");
+            return response;
+        }
         if (userRepository.findByEmail(dto.getEmail()).isPresent()) {
             response.setMessage("Already Present");
             return response;
